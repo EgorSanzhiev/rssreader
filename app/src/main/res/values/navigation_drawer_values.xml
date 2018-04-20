@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <string-array name="navigation_drawer_options">
+        <item>Управление каналами</item>
+        <item>Все новости</item>
+    </string-array>
+</resources>

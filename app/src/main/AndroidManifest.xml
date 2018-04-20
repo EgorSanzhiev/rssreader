@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="sanzhiev.rssfeed">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name=".RssFeedApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.FeedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.ChannelsActivity"/>
+
+        <activity android:name=".ui.AddChannelActivity"/>
+
+        <activity android:name=".ui.FeedItemActivity"/>
+
+        <activity android:name=".ui.IntentFilterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:mimeType="application/rss+xml"
+                    android:scheme="http"/>
+                <data
+                    android:mimeType="application/rss+xml"
+                    android:scheme="https"/>
+                <data
+                    android:mimeType="application/atom+xml"
+                    android:scheme="http"/>
+                <data
+                    android:mimeType="application/atom+xml"
+                    android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.SettingsActivity"/>
+
+        <service
+            android:name=".services.ChannelService"
+            android:enabled="true"/>
+
+        <receiver
+            android:name=".alarm.BootReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

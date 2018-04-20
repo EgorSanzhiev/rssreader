@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_activity_category_update_freq">Частота обновления</string>
+    <string name="settings_activity_update_frequency">Частота обновления</string>
+    <string name="settings_activity_default_update_frequency">0</string>
+
+    <string name="settings_activity_update_frequency_pref_key">
+        sanzhiev.rssfeed.ui.SettingsActivity.UPDATE_FREQ
+    </string>
+
+    <string-array name="settings_activity_update_freq_options">
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>30 минут</item>
+        <item>1 час</item>
+        <item>1 день</item>
+        <item>Обновлять вручную</item>
+    </string-array>
+
+    <string-array name="settings_activity_update_freq_values">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>1440</item>
+        <item>0</item>
+    </string-array>
+</resources>

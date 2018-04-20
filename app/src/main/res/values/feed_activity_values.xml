@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="feed_activity_item_read_color">#888888</color>
+    <color name="feed_activity_item_not_read_color">#000000</color>
+
+    <string name="feed_activity_update_button_name">Обновить</string>
+    <string name="feed_activity_title">Все новости</string>
+</resources>

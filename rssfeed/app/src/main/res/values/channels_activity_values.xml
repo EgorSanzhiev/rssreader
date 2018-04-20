@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="channels_activity_fab_margin">16dp</dimen>
+
+    <string name="channels_activity_title">Каналы</string>
+    <string name="channels_activity_channel_added">Канал добавлен</string>
+</resources>

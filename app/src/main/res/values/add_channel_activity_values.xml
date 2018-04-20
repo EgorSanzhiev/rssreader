@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_channel_activity_title">Добавить канал</string>
+    <string name="add_channel_activity_subscribe_button">Подписаться</string>
+    <string name="add_channel_activity_url_hint">Адрес канала</string>
+</resources>

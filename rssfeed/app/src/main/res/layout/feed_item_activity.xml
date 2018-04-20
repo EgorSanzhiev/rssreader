@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feed_item_activity"
+    style="@style/AppTheme.ActivityStyle"
+    tools:context="sanzhiev.rssfeed.ui.FeedItemActivity">
+
+    <include
+        android:id="@+id/feed_item_layout"
+        layout="@layout/feed_item"/>
+
+    <TextView
+        android:id="@+id/linkView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feed_item_layout"
+        android:autoLink="web"/>
+
+    <TextView
+        android:id="@+id/pubDateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linkView"/>
+
+</RelativeLayout>

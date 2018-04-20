@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_activity_category_update_freq">
+        <ListPreference
+            android:key="@string/settings_activity_update_frequency_pref_key"
+            android:title="@string/settings_activity_update_frequency"
+            android:entries="@array/settings_activity_update_freq_options"
+            android:entryValues="@array/settings_activity_update_freq_values">
+        </ListPreference>
+    </PreferenceCategory>
+</PreferenceScreen>
